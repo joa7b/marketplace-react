@@ -14,6 +14,7 @@ import {
   Share,
   RatingContainer,
   CloseNavbar,
+  InfoWapper,
 } from "./styles.ts";
 
 type NavbarProps = {
@@ -29,11 +30,11 @@ export const Navbar = ({ handleClose, isNavbarOpen }: NavbarProps) => {
       <CloseNavbar onClick={handleClose}>
         <CloseNavbarButton />
       </CloseNavbar>
-      {isNavbarOpen && (
-        <>
-          <ProfilePicContainer>
-            <img src="" alt="" />
-          </ProfilePicContainer>
+      <ProfilePicContainer isNavbarOpen={isNavbarOpen}>
+        <img src="" alt="" />
+      </ProfilePicContainer>
+      {/* {isNavbarOpen && ( */}
+        <InfoWapper isNavbarOpen={isNavbarOpen}>
           <TitleContainer>
             <StoreTitle>Título da loja</StoreTitle>
             <Share src={ShareIcon} alt="Share icon" />
@@ -48,8 +49,8 @@ export const Navbar = ({ handleClose, isNavbarOpen }: NavbarProps) => {
           <StoreProfileOptions />
           <Textarea label={"Biografia"} content={textareaContent} />
           <FooterNavbar />
-        </>
-      )}
+        </InfoWapper>
+      {/* )} */}
     </Aside>
   );
 };
