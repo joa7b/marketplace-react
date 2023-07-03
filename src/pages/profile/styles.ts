@@ -8,6 +8,11 @@ export const Header = styled.header`
 
 export const ContentProfileContainer = styled.div`
   display: flex;
+  padding: 0 300px 0 0;
+
+  @media (max-width: 400px) {
+    padding: 0;
+  }
 `;
 
 export const Content = styled.div`

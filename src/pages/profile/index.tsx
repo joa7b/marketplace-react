@@ -6,7 +6,7 @@ import { CategoriesContainer } from "../../ui/organisms/CategoriesContainer/inde
 import { Header, ContentProfileContainer, Content } from "./styles.ts";
 
 export const ProfilePage = () => {
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(true);
   const [showCategories, setShowCategories] = useState(true);
 
   const handleNavbar = () => {

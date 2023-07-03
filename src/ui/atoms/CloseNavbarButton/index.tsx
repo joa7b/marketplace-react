@@ -3,7 +3,7 @@ import { useState } from "react";
 import { CloseButtonContainer, Line } from "./styles";
 
 export const CloseNavbarButton = () => {
-  const [opened, setOpened] = useState(false);
+  const [opened, setOpened] = useState(true);
 
   const handleClick = () => {
     setOpened(!opened);

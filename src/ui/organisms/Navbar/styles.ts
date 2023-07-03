@@ -27,7 +27,7 @@ export const ProfilePicContainer = styled.div<{
   border-radius: 50%;
   position: absolute;
   top: 0;
-  left: ${(props) => (props.isNavbarOpen ? "50%" : "-25%")};
+  left: ${(props) => (props.isNavbarOpen ? "50%" : "-50%")};
   transition: left 0.5s ease-in-out;
   transform: translate(-50%, -50%);
   border-right: 1px solid #ebebeb;
