@@ -12,6 +12,5 @@ export const ContentProfileContainer = styled.div`
 
 export const Content = styled.div`
   position: absolute;
-  width: 100%;
   padding: 78px 16px;
 `;
