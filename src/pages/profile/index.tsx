@@ -1,3 +1,16 @@
+import { Navbar } from "../../ui/organisms/Navbar/index.tsx"
+
+import { Header } from "./styles.ts";
+
 export const ProfilePage = () => {
-  return <h1>hello page</h1>;
+  return (
+    <main>
+      <Header>
+        <img src="" alt="" />
+      </Header>
+      <section>
+        <Navbar />
+      </section>
+    </main>
+  );
 };
