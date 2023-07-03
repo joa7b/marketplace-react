@@ -5,3 +5,13 @@ export const Header = styled.header`
   height: 200px;
   background-color: #ebebeb;
 `;
+
+export const ContentProfileContainer = styled.div`
+  display: flex;
+`;
+
+export const Content = styled.div`
+  position: absolute;
+  width: 100%;
+  padding: 78px 16px;
+`;

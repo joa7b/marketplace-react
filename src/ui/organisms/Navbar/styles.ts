@@ -33,7 +33,7 @@ export const ProfilePicContainer = styled.div<{
   border-right: 1px solid #ebebeb;
 
   @media (max-width: 400px) {
-    left: ${(props) => (props.isNavbarOpen ? "50%" : "18%")};
+    left: ${(props) => (props.isNavbarOpen ? "50%" : "16%")};
   }
 `;
 
